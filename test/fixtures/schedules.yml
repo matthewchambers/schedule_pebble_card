@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  gameday: 2014-03-14
+  time: 2014-03-14 08:44:45
+  opponent: MyString
+  location: MyString
+
+two:
+  gameday: 2014-03-14
+  time: 2014-03-14 08:44:45
+  opponent: MyString
+  location: MyString
