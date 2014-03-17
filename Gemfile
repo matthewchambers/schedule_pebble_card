@@ -5,7 +5,6 @@ gem 'rails', '3.2.11'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
 gem "multi_json", "~> 1.9.0"
 gem "tzinfo", "~> 0.3.29"
 
