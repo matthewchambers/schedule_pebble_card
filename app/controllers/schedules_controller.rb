@@ -16,7 +16,11 @@ class SchedulesController < ApplicationController
 
       while i < result["data"]["schedule"].count do
         if Date.parse(result["data"]["schedule"][i]["date"]) > DateTime.now.to_date
-          output=output+result["data"]["schedule"][i]["title"]+" "+Date.parse(result["data"]["schedule"][i]["date"]).strftime("%m/%d/%Y")+ "\n"
+          if result["data"]["schedule"][i]["location"] != "Memorial Stadium"
+            output=output+"@"+result["data"]["schedule"][i]["title"]+" "+Date.parse(result["data"]["schedule"][i]["date"]).strftime("%m/%d/%Y")+ "\n"
+          else
+            output=output+result["data"]["schedule"][i]["title"]+" "+Date.parse(result["data"]["schedule"][i]["date"]).strftime("%m/%d/%Y")+ "\n"
+          end
         end
         i +=1
       end
